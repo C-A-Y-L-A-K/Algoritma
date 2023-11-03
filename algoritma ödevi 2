@@ -1,0 +1,99 @@
+1-) Aşağıdaki C programını inceleyiniz. Programın çıktısında 8.00 sonucunu vermektedir. Ondalık olarak tanımlanan “a” ve “b” değerlerini kullanıcıdan isteyen C programını yazınız.
+
+#include <stdio.h>
+
+int main() {
+    float b,a;
+    printf ("Lütfen örnekteki gibi giriniz=1.1,2.2\n");
+    printf ("A'yi ve B'yi girin:");
+    scanf ("%f, %f",&a,&b);
+    
+    printf("a=%.2f,b=%.2f \n",a,b);
+    printf("TOPLAM:%0.2f",a+b);
+   
+    return 0;
+}
+
+2-) Aşağıda C programında verilen HER komutun anlamını açıklayınız.
+
+//Ekrana Merhaba Nasilsin? yazan program (burada yorum satırında programın ne olduğunu " // " koyarak açıklamış)
+#include <stdio.h> (" #include " komutuyla ilk olarak kütüphaneyi stdio.h olarak tanımlamış yani buradaki değişkenleri stdio.h'dan bularak okuyacak)
+
+int main() {  (giriş kısmını yani " main " tanımlamış)
+printf ("Merhaba\n"); (printf=tahtaya yazdırma komutunu vermiş ve buraya "merhaba" yazmış) ("\n"koyarak alt satıra geçmesini sağlamış)
+    printf ("Nasilsin?"); (Tekrar printf kullanarak "nasılsın?" yazmış)
+   
+    return 0;  (geri dönme komutunu başta tanımladığı giriş kısmındaki değişkene " int " göre " 0 " girerek programı sonlandırmış)
+}
+
+3-) Aşağıdakilerden hangisi yanlış değişken ismidir?
+
+(Değişken isimleri Türkçe karakter içermemelidir.
+Değişken isimleri büyük ve küçük harf duyarlıdır.
+Değişken isimlerinde ilk karakter bir sayı olamaz.
+Değişken isimlerinde JavaScript etiketleri kullanılamaz.
+Değişken isimlerinde sayı, harf, alt çizgi ve dolar işareti kullanılabilir; boşluk, noktalama işareti veya sembol kullanılamaz.)
+
+a. Maas  DOĞRU
+b. Maas23  DOĞRU
+c. maas$  DOĞRU
+d. 123_4  YANLIŞ
+e. MAAS  DOĞRU
+f. double  YANLIŞ
+g. maas_$  DOĞRU
+h. İf_123  YANLIŞ
+i. Maas_23  DOĞRU
+j. le  DOĞRU
+k. 23_maas  YANLIŞ
+l. İnt  YANLIŞ
+
+4-) Tamsayı olarak tanımlanmış “toplam” değişkenini doğru bir şekilde ifade ediniz.
+
+int toplam; (burdaki "int" tamsayı değerini ifade eder ve "toplam" olarak bu değişkeni isimlendirmişiz)
+
+5-) Kullanıcıdan iki tamsayı alarak bu sayıların toplamını bulup ekranda gösteren bir C program yazınız.
+
+#include <stdio.h>
+
+int main() {
+    int b,a;
+    printf ("A'yi ve B'yi girin:");
+    scanf ("%d, %d",&a,&b);
+    
+    printf("a=%d,b=%d \n",a,b);
+    printf("TOPLAM:%d",a+b);
+   
+    return 0;
+}
+
+6-) Aşağıdaki seçeneklerden hangisinde tamsayı olarak tanımlanan toplam değişkenine ilk değer olarak 0 atanmıştır?
+
+a. Toplam:integer=0; (yanlış)
+b. Toplam=0, int; (yanlış)
+c. İnt toplam = 0;  ( "İnt" daki " İ " harfini küçük olarak kabul edersek doğru)
+d. İnt=0, toplam; (yanlış)
+
+7-)Aşağıdaki komutlar yürütüldüğünde a, b ve c’nin son değerleri ne olur?(10p)
+İnt a,b,c; (a,b ve c adında 3 değişken tanımlamış)
+a=8;   (a değişkenini 8'e eşitlemiş)
+b=15;   (b değişkenini 15'e eşitlemiş)
+c=a/b+b/a*2;  (c değişkenini (a/b)+(b/a*2) işleminin sonucuna programda çalıştırıldığında sonucun 2 olduğu görülür)
+b=b/2;  (b değerini 2 ye bölerek yeni değer atar) ( b değeri programda çalıştırıldığında 7 değeri gözükür)
+a=a+3;  ( a değerine 2 ekler ve yeni değeri programda çalıştırıldığında 11 olur )
+
+8-) Aşağıdaki program parçasının çıktısı nedir?
+
+#include <stdio.h>
+
+int main() {
+    
+int a=285;
+double y = -27.3789;
+
+printf("%6.2f\n",y);
+printf("%7.1f\n",y);
+printf("%4d\n",a/11);         (programda çalıştırıldığında -27.38 , -27.4 , 25 , 290 olarak çıktı alınır)
+printf("%2d",a+5);
+
+    return 0;
+}
